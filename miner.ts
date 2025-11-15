@@ -37,9 +37,9 @@ const ascii = `
 `;
 
 const nodes = [
-  "inj1qfd8vwq0j4ps2mn0felam8f4u8a5xvxn39ezfy",
-  "inj1wgvjaat3gna8dvuz7vqv6jmveng8kftlxklxjr",
-  "inj1h9uwgtd9dfcgfzvr870ge0cxq3erqrvzd2r5fz",
+  "inj1khx56me446cxwg9aplqau0k5mj72yuy5t63tu3",
+  "inj1n5ah0sm3d9rrty3a96qv2v4wncs69khnu67e0n",
+  "inj1z8lz43ll5vulc58774wvncxjs2r5z0cdz046rf",
 ];
 
 const NETWORK = (process.env.NETWORK || "testnet") as "mainnet" | "testnet";
@@ -175,7 +175,7 @@ async function getAstBalance(address: string): Promise<string> {
   try {
     const res = await bankApi.fetchBalance({
       accountAddress: address,
-      denom: "factory/inj1phgq0dp2fddqtuz9rkzcrfrz39wpcxmgf0ykj2/AST",
+      denom: "factory/inj1zgym77e6mzjqceqldk4purvjnuz5jwe5ckmymg/AST",
     });
 
     return res.amount || "0";
